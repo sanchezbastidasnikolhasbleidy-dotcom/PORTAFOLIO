@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0d1117;
+    color: #e6edf3;
+}
+
+/* ===== NAVEGACIÓN ===== */
+nav {
+    display: flex;                    /* Activa flexbox */
+    justify-content: space-between;  /* Logo a la izq, links a la der */
+    align-items: center;             /* Centrado vertical */
+    padding: 1rem 5%;                /* Espacio interno */
+    border-bottom: 1px solid #30363d;
+    background: #161b22;
+}
+
+/* Logo */
+.logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+.logo span {
+    color: #ff6a00;              /* Color naranja para destacar */
+}
+
+/* Contenedor de los enlaces */
+.nav-links {
+    display: flex;                /* Los links en fila */
+    gap: 1.5rem;                  /* Espacio entre cada link */
+}
+
+/* Cada enlace individual */
+.nav-links a {
+    color: #8b949e;              /* Gris claro */
+    text-decoration: none;       /* Quita el subrayado */
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;       /* Animación suave */
+}
+
+/* Cuando pasas el mouse o es la página activa */
+.nav-links a:hover,
+.nav-links a.active {
+    color: #e6edf3;              /* Blanco brillante */
+}
+
+
+
+.hero {
+    display: flex;
+    flex-direction: column;       /* Elementos uno debajo del otro */
+    align-items: center;          /* Centrado horizontal */
+    justify-content: center;     /* Centrado vertical */
+    text-align: center;
+    padding: 4rem 2rem;
+    min-height: 60vh;             /* Ocupa al menos 60% de la pantalla */
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero h1 span {
+    color: #ff6a00;              /* Tu nombre en naranja */
+}
+
+.hero p {
+    color: #8b949e;
+    font-size: 1rem;
+    max-width: 500px;            /* No se hace muy ancho */
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Botón reutilizable */
+.btn {
+    display: inline-block;
+    background: #ff6a00;
+    color: #fff;
+    padding: 0.7rem 1.8rem;
+    border-radius: 6px;
+    text-decoration: none;        /* Sin subrayado */
+    font-weight: 700;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #ff8533;          /* Más claro al pasar mouse */
+}
+
+.section {
+    padding: 3rem 5%;
+    border-top: 1px solid #30363d;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section h2 span {
+    color: #ff6a00;
+}
+
+/* ===== GRID DE HERRAMIENTAS ===== */
+.tools-grid {
+    display: flex;                /* Tarjetas en fila */
+    gap: 1rem;                    /* Espacio entre tarjetas */
+    flex-wrap: wrap;              /* Si no caben, bajan a la sig. línea */
+}
+
+.tool-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+    min-width: 120px;
+    flex: 1;                      /* Se reparten el espacio por igual */
+    transition: border-color 0.3s;
+}
+
+.tool-card:hover {
+    border-color: #ff6a00;        /* Borde naranja al pasar mouse */
+}
+
+.tool-card .icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.tool-card p {
+    font-size: 0.8rem;
+    color: #8b949e;
+}
